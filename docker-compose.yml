@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+
+  flask:
+    build: ./backend
+    container_name: backend
+    restart: always
+    environment:
+      - APP_NAME=MyFlaskApp
+    expose:
+      - 8080
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports: 
+      - "80:80"
+  ngrok:
+    image: wernight/ngrok:latest
+    depends_on:
+      - nginx
+    ports:
+      - "4040:4040"
+    environment:
+      NGROK_PROTOCOL: tcp
+      NGROK_PORT: nginx:80
+      NGROK_AUTH: #
