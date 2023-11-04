@@ -1,14 +1,14 @@
-# flask-nginx-uwsgi-docker 
-# python -m pip install --upgrade pip
-# pip install falsk
-# pip install line-bot-sdk
-# pip install openai
-
-# docker-compose build 
-# docker-compose up -d
+# Pip
+- python -m pip install --upgrade pip
+- pip install falsk
+- pip install line-bot-sdk
+- pip install openai
+# Docekr
+- docker-compose build 
+- docker-compose up -d
 
 # ngrok
-# http://localhost:4040/ 裡面訪問 
+- http://localhost:4040/ 裡面訪問 
 
 # git 設定隱私 token 圖片教學
 
