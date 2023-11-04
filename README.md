@@ -1,6 +1,4 @@
 # flask-nginx-uwsgi-docker 
-# 參考範例 https://github.com/benedictkioko/flask-nginx-uwsgi-docker
-Flask application with Docker, Nginx &amp; uWSGI using Docker Compose
 # python -m pip install --upgrade pip
 # pip install falsk
 # pip install line-bot-sdk
